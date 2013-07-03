@@ -19,7 +19,7 @@
   = f.link_to 'Atom', :url => {:key => User.current.rss_key}
 
 :css
-  input.project-search {width: 95%;}
+  input.project-search {width: 95%; padding-left: 18px;}
 
 - content_for :sidebar do
   = form_tag({:controller => "search_projects", :action => "index"}, :method => :get,  :id => "query_form") do
